@@ -3,11 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="layout-grid">
+      <nav class='navbar'>
+        <div class="navbar-wrapper">
+        <ul class="navbar-items">
+          <a href="#home"><li class="navbar-item">Home</li></a>
+          
+          <a href="#hobbies"><li class="navbar-item">Hobbies</li></a>
+          <a href="./garden-planner/"><li class="navbar-item">Garden Planner</li></a>
+        </ul>
+      </div>
+      </nav>
+      <header class="header">
+        <div>Kendall Hecht - Portfolio</div>
+      </header>
+      
+      <main class="main-content">
+        <div class="container intro">
+          <p>Hi, my name's Kendall, this website is meant to be a portfolio and development testbed/showcase as I learn front-end development, website deployment,
+            eventual tie-ins to a Python backend and some sort of DB - probably NoSQL as I think it'll suit my needs and that's what I have experience with.</p>
+        </div>
+        <div class="container container-half">
+          <div class="experience">
+            <h2>Work experience</h2>
+            <h3>Software Developer - Avenir Health</h3>
+            <ul>
+              <li>Maintained and upgraded core aspects of Spectrum, a Delphi-based desktop application</li>
+              <li>Played a key role in migrating Spectrum to a distributed web application with multiple RESTful Python servers</li>
+              <li>Responsible for maintaining parity of outcome between desktop and web application calculation engines</li>
+              <li>Collaborated with internal teams and stakeholders to create, modify and maintain desktop and web applications</li>
+              <li>Standardized data structures for core modules in an effort to streamline development efforts across the development team</li>
+              <li>Scripted data translation in Python from Excel CSV/XLSX to JSON, to be stored in a NoSQL database</li>
+              <li>Wrote and maintained APIs for multiple distributed Python servers</li>
+            </ul>
+          </div>
+          
+          <div class="experience skills">
+            <h2>Relevant skills</h2>
+            <ul>
+              <li class="skill">HTML</li>
+              <li class="skill">CSS</li>
+              <li class="skill">Javascript</li>
+              <li class="skill">Python</li>
+              <li class="skill">Delphi</li>
+              <li class="skill">Git</li>
+            </ul>
+          </div>
+        </div>
+      
+      </main>
+      <footer class="footer">das a foot</footer>
+    </div>
+
+    <!-- <div id="app"></div> -->
+    <!-- <script type="module" src="/src/main.js"></script> -->
   </body>
 </html>

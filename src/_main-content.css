@@ -1,0 +1,33 @@
+.experience {
+    background-color: var(--gunmetal);
+    border-radius: 6px;
+    padding-inline: 15px;
+}
+.experience > ul {
+    list-style: circle;
+}
+
+.experience > ul > li {
+    padding-bottom: 5px;
+}
+
+.skills > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    /* align-content: stretch; */
+    list-style: none;
+    gap: 20px;
+    
+
+
+}
+.skill {
+    padding: 5px 10px;
+    outline: 1px solid black;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    border-radius: 4px;
+    
+    /* flex-basis: auto; */
+}

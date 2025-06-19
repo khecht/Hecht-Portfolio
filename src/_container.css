@@ -1,0 +1,19 @@
+
+.container {
+    max-width: var(--main-content-width);
+    padding-inline: 20px;
+    margin-inline: auto;
+    background-color: var(--gunmetal);
+    transition: box-shadow 500ms ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 10px 10px 15px 0px rgba(0 0 0 / 30%);
+}
+
+.container-half {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 40px;
+    background-color:inherit;
+}

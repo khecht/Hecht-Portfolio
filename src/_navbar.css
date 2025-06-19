@@ -1,0 +1,29 @@
+.navbar {
+    position: relative;
+    grid-area: navbar;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: var(--sidebar-width);
+    background-color: var(--gunmetal);
+}
+
+.navbar-wrapper {
+    position: fixed;
+    top: 50vh;
+
+}
+
+.navbar-items {
+    list-style: none;
+}
+
+.navbar-item {
+    margin-block: 10px;
+    width: 100%;
+
+}
+
+.navbar-items > a {
+    text-decoration: none;
+}

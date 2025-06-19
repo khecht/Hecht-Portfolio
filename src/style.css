@@ -1,4 +1,34 @@
-:root {
+@import '_base.css';
+@import '_navbar.css';
+@import '_header.css';
+@import '_container.css';
+@import '_main-content.css';
+a {
+  color: inherit;
+  opacity: 0.85;
+  transition: opacity 200ms;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.layout-grid {
+  height: 100vh;
+  height: 100dvh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: 
+    'navbar header header'
+    'navbar main   sidebar'
+    'navbar footer sidebar';
+  grid-template-columns: var(--sidebar-width) 1fr clamp(0px, 10%, var(--sidebar-width));
+}
+
+footer {
+  grid-area: footer;
+}
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -93,4 +123,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
