@@ -1,13 +1,31 @@
-.experience {
-    background-color: var(--gunmetal);
+#intro {
+    /* padding: 20px; */
+    margin-bottom: var(--gap);
+}
+
+.header {
+    position: sticky;
+    bottom: 500px;
+}
+
+.content {
+    background-color: var(--forest-green);
     border-radius: 6px;
     padding-inline: 15px;
+    
+    opacity: .8;
+    transition: opacity 500ms ease-in-out;
 }
-.experience > ul {
+
+.content:hover {
+    opacity: .9;
+}
+
+.content > ul {
     list-style: circle;
 }
 
-.experience > ul > li {
+.content > ul > li {
     padding-bottom: 5px;
 }
 
@@ -15,19 +33,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: stretch;
-    /* align-content: stretch; */
     list-style: none;
+    padding: 0px;
     gap: 20px;
-    
-
-
 }
+
 .skill {
     padding: 5px 10px;
     outline: 1px solid black;
     font-size: 1.5rem;
     flex-grow: 1;
     border-radius: 4px;
-    
-    /* flex-basis: auto; */
+    transition: background-color 250ms ease-in-out;
+}
+.skill:hover {
+    background-color: var(--btn-hover-background);
+    opacity: 1;
 }

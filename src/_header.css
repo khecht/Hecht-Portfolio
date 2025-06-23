@@ -1,11 +1,10 @@
 header {
     grid-area: header;
-     display: flex;
-     justify-content: flex-start;
-     color: var(--brown-sugar);
-     /* padding-left: calc(var(--sidebar-width) + 20px); */
-     align-items: center;
-     padding-inline: 20px;
+    display: flex;
+    justify-content: flex-start;
+    /* padding-left: calc(var(--sidebar-width) + 20px); */
+    /* align-items: center;
+    padding-inline: 20px; */
 }
 header > * {
     text-transform: capitalize;

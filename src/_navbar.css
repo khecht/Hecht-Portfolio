@@ -5,16 +5,11 @@
     top: 0;
     bottom: 0;
     width: var(--sidebar-width);
-    background-color: var(--gunmetal);
-}
-
-.navbar-wrapper {
-    position: fixed;
-    top: 50vh;
-
 }
 
 .navbar-items {
+    position: fixed;
+    top: 50vh;
     list-style: none;
 }
 

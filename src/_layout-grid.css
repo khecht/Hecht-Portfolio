@@ -1,0 +1,14 @@
+
+.layout-grid {
+    /* height: max(100vh); */
+    
+    width: var(--total-width);
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+      'landing landing landing'
+      'navbar  main    sidebar'
+      'footer  footer  footer';
+    grid-template-columns: var(--sidebar-width) 1fr clamp(0px, 10%, var(--sidebar-width));
+    grid-template-rows: 100vh 1fr var(--footer-height);
+  }

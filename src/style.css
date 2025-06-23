@@ -3,6 +3,9 @@
 @import '_header.css';
 @import '_container.css';
 @import '_main-content.css';
+@import '_layout-grid.css';
+@import '_landing.css';
+@import 'typography.css';
 a {
   color: inherit;
   opacity: 0.85;
@@ -13,20 +16,12 @@ a:hover {
     opacity: 1;
 }
 
-.layout-grid {
-  height: 100vh;
-  height: 100dvh;
-  width: 100vw;
-  display: grid;
-  grid-template-areas: 
-    'navbar header header'
-    'navbar main   sidebar'
-    'navbar footer sidebar';
-  grid-template-columns: var(--sidebar-width) 1fr clamp(0px, 10%, var(--sidebar-width));
-}
-
 footer {
   grid-area: footer;
+  /* height: var(--footer-height); */
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--forest-green) 70%, var(--forest-green) 100%);
+  margin: 0px;
+  padding: 0px;
 }
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

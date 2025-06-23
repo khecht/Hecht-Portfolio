@@ -3,14 +3,17 @@
     --atomic-tangerine: #F1AB86;
     --brown-sugar: #C57B57;
     --gunmetal: #1E2D2F;
-    --dark-green: #041F1E;
+    --dark-green: rgba(4, 31, 30, 1);
+    --forest-green: rgba(10, 30, 1, 1);
+    --birch-bark: rgba(167, 183, 165, 1);
+    --btn-hover-background: rgba(0, 0, 0, .2);
 
     --primary: var(--atomic-tangerine);
     /* --dark-blue: #130c24; */
     --black: #232020;
     --gray: #999999;
     --beige: #f5f5f1;
-    --gap: 80px;
+    --gap: 40px;
 
     /* theme dependent variables */
     --text-color: var(--peach-yellow);
@@ -21,7 +24,9 @@
     --anchor-color: var(--primary);
 
     --sidebar-width: 200px;
+    --footer-height: 100px;
     --main-content-width: 960px;
+    --total-width: calc(100vw - var(scrollbar-width));
 }
 
 * {
@@ -29,11 +34,19 @@
 }
 
 html {
-    background-color: var(--dark-green);
+    background-color: var(--forest-green);
+    
     color: var(--text-color);
 }
 body {
+    /* position: relative; */
+    font-family: "IBM Plex Serif";
     margin: 0;
+    /* height: 200vh; */
+    background-image: url(.\images\pexels-33205297-7042926.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 }
 
 @media (prefers-reduced-motion: no-preference) {

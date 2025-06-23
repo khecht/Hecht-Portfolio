@@ -1,0 +1,27 @@
+.landing-page {
+    grid-area: landing;
+    position: relative;
+    width: var(--total-width);
+    /* height: 100vh; */
+    height: 100dvh;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(rgba(0 0 0 / 80%), rgba(0 0 0 / 0%));
+}
+
+.name {
+    padding: 0px;
+    color: var(--birch-bark);
+}
+
+.role {
+    margin-bottom: 0px;
+    opacity: .9;
+}
+
+.info-container {
+    position: sticky;
+    top: 20px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
