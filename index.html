@@ -3,36 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
     <div class="layout-grid">
+    <div class="landing-page">
+      <div class="info-container">
+        <header class="title--lg name">Kendall Hecht</header>
+        <h2 class="text--xl role">Software Developer</h2>
+      </div>
+    </div>
       <nav class='navbar'>
-        <div class="navbar-wrapper">
         <ul class="navbar-items">
-          <a href="#home"><li class="navbar-item">Home</li></a>
+          <a href="#intro"><li class="navbar-item">Home</li></a>
           
           <a href="#hobbies"><li class="navbar-item">Hobbies</li></a>
           <a href="./garden-planner/"><li class="navbar-item">Garden Planner</li></a>
         </ul>
-      </div>
       </nav>
-      <header class="header">
-        <div>Kendall Hecht - Portfolio</div>
-      </header>
       
       <main class="main-content">
-        <div class="container intro">
+        <div class="container content text" id="intro">
           <p>Hi, my name's Kendall, this website is meant to be a portfolio and development testbed/showcase as I learn front-end development, website deployment,
             eventual tie-ins to a Python backend and some sort of DB - probably NoSQL as I think it'll suit my needs and that's what I have experience with.</p>
         </div>
         <div class="container container-half">
-          <div class="experience">
-            <h2>Work experience</h2>
-            <h3>Software Developer - Avenir Health</h3>
-            <ul>
+          <div class="content">
+            <h2 class="title">Work experience</h2>
+            <h3 class="text--bold">Software Developer - Avenir Health</h3>
+            <ul class="text">
               <li>Maintained and upgraded core aspects of Spectrum, a Delphi-based desktop application</li>
               <li>Played a key role in migrating Spectrum to a distributed web application with multiple RESTful Python servers</li>
               <li>Responsible for maintaining parity of outcome between desktop and web application calculation engines</li>
@@ -40,12 +45,18 @@
               <li>Standardized data structures for core modules in an effort to streamline development efforts across the development team</li>
               <li>Scripted data translation in Python from Excel CSV/XLSX to JSON, to be stored in a NoSQL database</li>
               <li>Wrote and maintained APIs for multiple distributed Python servers</li>
+              <!-- <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, doloremque!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, doloremque!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, doloremque!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, doloremque!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, doloremque!</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, doloremque!</li> -->
             </ul>
           </div>
           
-          <div class="experience skills">
-            <h2>Relevant skills</h2>
-            <ul>
+          <div class="content skills">
+            <h2 class="title">Relevant skills</h2>
+            <ul class="text--xl">
               <li class="skill">HTML</li>
               <li class="skill">CSS</li>
               <li class="skill">Javascript</li>
@@ -57,10 +68,20 @@
         </div>
       
       </main>
-      <footer class="footer">das a foot</footer>
+      <footer class="footer">das a foot  
+        <img
+        src="src/images/github.svg"
+        alt="Github logo"
+        width="35"
+        height="35"
+        />
+        <img
+        src="src/images/linkedin.svg"
+        alt="LinkedIn logo"
+        width="35"
+        height="35"
+        />
+      </footer>
     </div>
-
-    <!-- <div id="app"></div> -->
-    <!-- <script type="module" src="/src/main.js"></script> -->
   </body>
 </html>
