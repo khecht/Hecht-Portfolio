@@ -1,11 +1,13 @@
 @import '_base.css';
 @import '_navbar.css';
 @import '_header.css';
+@import '_footer.css';
 @import '_container.css';
 @import '_main-content.css';
 @import '_layout-grid.css';
 @import '_landing.css';
 @import 'typography.css';
+
 a {
   color: inherit;
   opacity: 0.85;
@@ -14,14 +16,6 @@ a {
 
 a:hover {
     opacity: 1;
-}
-
-footer {
-  grid-area: footer;
-  /* height: var(--footer-height); */
-  background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--forest-green) 70%, var(--forest-green) 100%);
-  margin: 0px;
-  padding: 0px;
 }
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

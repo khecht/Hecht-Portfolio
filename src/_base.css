@@ -37,6 +37,8 @@ html {
     background-color: var(--forest-green);
     
     color: var(--text-color);
+    scroll-top: 200px;
+    
 }
 body {
     /* position: relative; */
@@ -47,6 +49,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    
 }
 
 @media (prefers-reduced-motion: no-preference) {

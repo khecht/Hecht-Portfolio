@@ -1,0 +1,8 @@
+
+footer {
+    grid-area: footer;
+    /* height: var(--footer-height); */
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--forest-green) 70%, var(--forest-green) 100%);
+    margin: 0px;
+    padding: 0px;
+  }
